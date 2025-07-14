@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulangerie du Beaujolais - Villeurbanne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo">Boulangerie du Beaujolais</a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+        <video src="villefranche.mp4" autoplay muted loop></video>
+        <div class="hero-content">
+            <h1>Boulangerie<br>du<br>Beaujolais</h1>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="emoji">🥖</span>
+                    <span class="text">Boulangerie</span>
+                </div>
+                <div class="service-card">
+                    <span class="emoji">🥪</span>
+                    <span class="text">Sandwichs</span>
+                </div>
+                <div class="service-card">
+                    <span class="emoji">☕</span>
+                    <span class="text">Café</span>
+                </div>
+                <div class="service-card">
+                    <span class="emoji">🍦</span>
+                    <span class="text">Glaces</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Spécialités</h2>
+                <p>Découvrez notre sélection de produits artisanaux, préparés chaque jour avec passion</p>
+            </div>
+
+            <!-- Categories Navigation -->
+            <div class="category-nav">
+                <button class="category-btn active" data-category="all">Tout</button>
+                <button class="category-btn" data-category="viennoiseries">Viennoiseries</button>
+                <button class="category-btn" data-category="patisseries">Pâtisseries</button>
+                <button class="category-btn" data-category="savoureux">Savoureux</button>
+                <button class="category-btn" data-category="boissons">Boissons</button>
+                <button class="category-btn" data-category="glaces">Glaces</button>
+            </div>
+
+            <!-- Products Gallery -->
+            <div class="products-gallery">
+                <!-- Viennoiseries -->
+                <div class="product-card" data-category="viennoiseries">
+                    <div class="product-image">
+                        <img src="assets/images/croissant.jpg" alt="Croissant">
+                        <div class="product-overlay">
+                            <span class="product-price">2,20€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Croissant</h3>
+                        <p>Croissant au beurre, feuilletage traditionnel</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="viennoiseries">
+                    <div class="product-image">
+                        <img src="assets/images/pain-chocolat.jpg" alt="Pain au Chocolat">
+                        <div class="product-overlay">
+                            <span class="product-price">2,50€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain au Chocolat</h3>
+                        <p>Pâte feuilletée et chocolat noir</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="viennoiseries">
+                    <div class="product-image">
+                        <img src="assets/images/suisse.jpg" alt="Pain Suisse">
+                        <div class="product-overlay">
+                            <span class="product-price">2,80€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain Suisse</h3>
+                        <p>Aux raisins et crème pâtissière</p>
+                    </div>
+                </div>
+
+                <!-- Pâtisseries -->
+                <div class="product-card" data-category="patisseries">
+                    <div class="product-image">
+                        <img src="assets/images/flan.jpg" alt="Flan Vanille">
+                        <div class="product-overlay">
+                            <span class="product-price">4,50€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Flan Vanille</h3>
+                        <p>Crème vanille traditionnelle</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="patisseries">
+                    <div class="product-image">
+                        <img src="assets/images/tarte-citron.jpg" alt="Tarte Citron Meringuée">
+                        <div class="product-overlay">
+                            <span class="product-price">5,20€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tarte Citron Meringuée</h3>
+                        <p>Citron frais et meringue dorée</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="patisseries">
+                    <div class="product-image">
+                        <img src="assets/images/fraisier.jpg" alt="Fraisier">
+                        <div class="product-overlay">
+                            <span class="product-price">6,80€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fraisier</h3>
+                        <p>Génoise, crème mousseline et fraises</p>
+                    </div>
+                </div>
+
+                <!-- Savoureux -->
+                <div class="product-card" data-category="savoureux">
+                    <div class="product-image">
+                        <img src="assets/images/pizza.jpg" alt="Pizza">
+                        <div class="product-overlay">
+                            <span class="product-price">8,50€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pizza</h3>
+                        <p>Pâte artisanale, tomates et mozzarella</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="savoureux">
+                    <div class="product-image">
+                        <img src="assets/images/quiche.jpg" alt="Quiche">
+                        <div class="product-overlay">
+                            <span class="product-price">5,80€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Quiche Lorraine</h3>
+                        <p>Pâte brisée, lardons et crème fraîche</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="savoureux">
+                    <div class="product-image">
+                        <img src="assets/images/norvegien.jpg" alt="Sandwich Norvégien">
+                        <div class="product-overlay">
+                            <span class="product-price">7,20€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sandwich Norvégien</h3>
+                        <p>Saumon fumé, cream cheese et crudités</p>
+                    </div>
+                </div>
+
+                <!-- Boissons -->
+                <div class="product-card" data-category="boissons">
+                    <div class="product-image">
+                        <img src="assets/images/coffee.jpg" alt="Café Américain">
+                        <div class="product-overlay">
+                            <span class="product-price">2,80€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Café Américain</h3>
+                        <p>Espresso allongé, grains arabica</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boissons">
+                    <div class="product-image">
+                        <img src="assets/images/cappucino.jpg" alt="Cappuccino">
+                        <div class="product-overlay">
+                            <span class="product-price">3,50€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso, lait vapeur et mousse onctueuse</p>
+                    </div>
+                </div>
+
+                <!-- Glaces -->
+                <div class="product-card" data-category="glaces">
+                    <div class="product-image">
+                        <img src="assets/images/gelato.jpg" alt="Glace à l'Italienne">
+                        <div class="product-overlay">
+                            <span class="product-price">4,20€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Glace à l'Italienne</h3>
+                        <p>Vanille, chocolat ou parfum du jour</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="glaces">
+                    <div class="product-image">
+                        <img src="assets/images/sorbet.jpg" alt="Sorbet">
+                        <div class="product-overlay">
+                            <span class="product-price">3,80€</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sorbet</h3>
+                        <p>Fruits frais, citron, fraise ou mangue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>Notre Histoire</h2>
+                        <p>Une tradition familiale au cœur de Villeurbanne</p>
+                    </div>
+                    
+                    <div class="about-story">
+                        <p>Depuis 1987, la <strong>Boulangerie du Beaujolais</strong> perpétue l'art de la boulangerie traditionnelle française au cœur de Villeurbanne. Fondée par Jean-Pierre et Marie Dubois, notre boulangerie familiale s'est transmise de génération en génération, gardant intact l'amour du pain et des produits artisanaux.</p>
+                        
+                        <p>Chaque matin dès 4h30, nos boulangers pétrissent avec passion des pâtes préparées selon des recettes ancestrales. Nous sélectionnons rigoureusement nos ingrédients : farines de meuniers locaux, beurre AOP Charentes-Poitou, et œufs de poules élevées en plein air.</p>
+                        
+                        <p>Notre engagement ? Vous proposer chaque jour des produits frais, authentiques et savoureux. Du croissant doré du petit-déjeuner aux pâtisseries raffinées pour vos occasions spéciales, en passant par notre pain traditionnel cuit au four à pierre, nous mettons tout notre savoir-faire à votre service.</p>
+                        
+                        <p>Aujourd'hui dirigée par Thomas Dubois, la troisième génération, notre boulangerie continue d'innover tout en respectant les traditions. Nous sommes fiers d'être un lieu de convivialité et de gourmandise au cœur du quartier.</p>
+                    </div>
+
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon">🌾</span>
+                            <div>
+                                <h4>Ingrédients Locaux</h4>
+                                <p>Partenariats avec les producteurs régionaux</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">👨‍🍳</span>
+                            <div>
+                                <h4>Savoir-faire Artisanal</h4>
+                                <p>Techniques traditionnelles transmises</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💚</span>
+                            <div>
+                                <h4>Engagement Durable</h4>
+                                <p>Respect de l'environnement et du terroir</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="assets/images/devanture.png" alt="Façade de la boulangerie">
+                    <div class="image-caption">
+                        <p>Notre boulangerie au cœur de Villeurbanne depuis 1987</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nous Trouver</h2>
+                <p>Venez nous rendre visite à Villeurbanne</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>123 Avenue fictive<br>69400 Villefranche</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>04 00 00 00 00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@boulangeriedubeaujolais.fr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">🕒</span>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>
+                                <strong>Lundi - Samedi</strong><br>
+                                6h30 - 19h30<br><br>
+                                <strong>Dimanche</strong><br>
+                                7h00 - 13h00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <img src="assets/images/plan.png" alt="Carte de localisation">
+                        <div class="map-overlay">
+                            <p>Cliquez pour ouvrir dans Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Boulangerie du Beaujolais</h3>
+                    <p>Tradition et passion depuis 1987</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#products">Produits</a>
+                    <a href="#about">À Propos</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Boulangerie du Beaujolais. Tous droits réservés.</p>
+                <p class="developer-credit">Site créé par <a href="https://www.ibmdev.fr" target="_blank" rel="noopener noreferrer">ibmdev</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
