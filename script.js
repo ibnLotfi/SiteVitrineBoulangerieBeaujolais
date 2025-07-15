@@ -232,3 +232,42 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('Boulangerie du Beaujolais - Site loaded successfully! 🥖');
 });
+
+let player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtube-player', {
+        videoId: 'vrAcufBP6E8',
+        playerVars: {
+            autoplay: 1,
+            loop: 1,
+            controls: 0,
+            showinfo: 0,
+            modestbranding: 1,
+            mute: 1,
+            playlist: 'vrAcufBP6E8'
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    event.target.mute();
+    event.target.playVideo();
+    // Faire apparaître la vidéo en douceur
+    document.getElementById('youtube-player').style.opacity = '1';
+}
+
+function onPlayerStateChange(event) {
+    if (event.data === YT.PlayerState.ENDED) {
+        player.playVideo();
+    }
+}
+
+// Charger l'API YouTube
+const tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
